@@ -9,6 +9,7 @@
     --bkColor: #252529;
 }
 
+
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -36,14 +37,14 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .overlayImg{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   z-index: 10;
   position: absolute;
 }
@@ -54,7 +55,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(35, 35, 35, 0.331);
+  background: rgba(31, 32, 60, 0.499);
   mix-blend-mode: overlay;
 }
 .section-head{
@@ -72,27 +73,28 @@ body{
 
 /* SHOWCASE */
 #showcase{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
 }
 
 #showcase .container{
-    margin-top: 40vh;
-    color: var(--white);
+  margin-top: 20vh;
+  color: var(--white);
+  margin-left: 3%;
 }
 
 #showcase h1{
-    font-size: 4rem;
-    margin-bottom: 0;
-    color: #252529;
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: #ffffff;
 }
 
 #showcase h2{
-    font-size: 2rem;
+  font-size: 2rem;
 }
 video{
   position:relative;
@@ -101,31 +103,48 @@ video{
   width: 100%;
   height: 100%;
   object-fit: cover;  
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
+
+ul{
+  border-width: 1px;
+  color: white;
+}
+
 /* SHOWCASE END */
 
 /* Utility Classes */
 .container{
-    /* max-width: 1180px; */
-    /* text-align: center; */
-    margin: 0 auto;
-    padding: 0 3rem;
+  /* max-width: 1180px; */
+  /* text-align: center; */
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 .lead{
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .mb{
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
 }
 .mt{
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .text-center{
-    text-align: center;
+  text-align: center;
+}
+
+.border-underline{
+  /* display: inline; */
+  max-width: 10%;
+  min-width: 20%;
+  border-bottom: 2px solid white;
+  border-color: #fff;
+  z-index: 10;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
 }
 /* UTILITY CLASSES END */
 
@@ -332,6 +351,7 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
   display: none;
 }
+
 @media (max-width:920px) {
   nav .navbar{
     max-width: 100%;
@@ -463,6 +483,9 @@ nav .navbar .links li .sub-menu li{
     }
     #showcase .container{
         margin-top: 35vh;
+        background-color: #00000076;
+        max-width: 80%;
+        max-height: 40%;
     }
     #showcase h1{
         font-size: 3rem;
