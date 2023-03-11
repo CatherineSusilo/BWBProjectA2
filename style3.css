@@ -10,15 +10,17 @@
     --white: #fff;
     --bkColor: #252529;
   }
-    
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Yeseva+One&display=swap');
+  /* font-family: 'Courgette', cursive;
+  font-family: 'Yeseva One'; */
   /* Googlefont Poppins CDN Link */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
   *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-  }
+      font-family: 'Yeseva One';
+      }
   html, body{
     width:100%;
   overflow-x:hidden;
@@ -47,11 +49,11 @@
     .section-head{
       font-size: 2.5rem;
       margin: 0;
-      
+      font-family: 'Courgette', cursive;
     }
     .section h3{
       font-size: 2rem;
-      
+      font-family: 'Courgette', cursive;
     }
   /* Utility Classes */
 .container{
@@ -118,6 +120,7 @@
     color: var(--white);
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Courgette', cursive;
   }
   #cm{
     background-image: linear-gradient(to bottom right, #584444 20%, #ffcacd 100%);
@@ -127,6 +130,7 @@
   .container p{
     color: var(--white);
     width:80%;
+    font-family: 'Yeseva One';
   } 
 .carousel{
     padding: 20px 40px;
@@ -138,12 +142,14 @@
 }
 .carousel-item .con-title{
     font-size: 3rem;
+    font-family: 'Courgette', cursive;
 }
 .carousel-item p{
     display: flex;
     padding: 0 50px;
     margin-left: 80px;
     color: var(--white);
+    font-family: 'Yeseva One';
 }
 #last{
     display:contents;
@@ -177,6 +183,7 @@
     .container p{
         color: var(--white);
         width:95%;
+        font-family: 'Yeseva One';
       }  
     .carousel-item #pic1{
         height: auto;
@@ -201,5 +208,6 @@
         text-align: center;
         align-self: center;
         display: block;
+        font-family: 'Courgette', cursive;
     }
 }
