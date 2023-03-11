@@ -130,7 +130,7 @@
     margin-bottom: 30px;
   }
   #lotus{
-    width: 400px;
+    width: 35%;
 
   }
   #butt{
@@ -185,6 +185,7 @@
   #task-list li {
     opacity: 1;
     transition: opacity 1s;
+    font-size: 0.8rem;
   }
   
   #task-list li.complete {
@@ -195,7 +196,9 @@
   #task-list input[type="checkbox"] {
     margin-right: 10px;
   }
-
+  #final-text{
+    width: 60%;
+  }
   @media screen and (max-width: 1000px) {
     .dailyTasks{
       width: 80%;
@@ -206,4 +209,16 @@
       margin-right: 0;
       margin-left: 20px
     }
+    #lotus{width: 70%;}
+    .dailyTasks p{
+      margin-left: 10px;
+      padding-bottom: 20px;
+      font-size: 0.7rem;
+    }
+    #final-text{
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    #lotus{width: 80%;}
   }
